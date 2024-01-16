@@ -363,6 +363,79 @@ body {
     background: rgba(233, 68, 68, 0.05);
 }
 
+/* newsletter section styles */
+.newsletter {
+    margin-top: 100px;
+    display: flex;
+    gap: 24px;
+}
+
+.newsletter .newsletter-form {
+    max-width: 474px;
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+.newsletter-form>h3 {
+    font-size: 24px;
+}
+
+.newsletter-form>p {
+    margin-top: 16px;
+    margin-bottom: 48px;
+    max-width: 350px;
+}
+
+.newsletter-form .newsletter-subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.newsletter-subscribe-form input {
+    height: 52px;
+    padding: 16px 20px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    outline: none;
+    font-family: Mulish;
+    font-size: 16px;
+}
+
+.newsletter-subscribe-form input::-webkit-input-placeholder {
+    color: rgba(19, 19, 24, 0.30);
+}
+
+.newsletter .newsletter-banner {
+    position: relative;
+    border-radius: 16px;
+}
+
+.newsletter-banner>img {
+    width: 100%;
+    height: 100%;
+}
+
+.newsletter-banner>div {
+    position: absolute;
+    right: 1%;
+    bottom: 12%;
+    padding: 25px 45px 15px 45px;
+    border-radius: 16px;
+    background: #FF5400;
+    text-align: center;
+    color: #FFF;
+    font-size: 24px;
+    transform: rotate(-19.628deg);
+}
+
+.newsletter-banner>div>h3 {
+
+    font-size: 32px;
+    font-weight: 800;
+}
 
 @media screen and (max-width:600px) {
     .text-title {
@@ -514,6 +587,41 @@ body {
 
     .why-choose-us-cards .cards {
         width: 100%;
+    }
+
+    .newsletter {
+        margin-top: 24px;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .newsletter .newsletter-form {
+        max-width: 540px;
+        width: 100%;
+        padding: 24px;
+    }
+
+    .newsletter-form>h3 {
+        font-size: 20px;
+    }
+
+    .newsletter-form>p {
+        margin-top: 8px;
+        margin-bottom: 32px;
+        max-width: 450px;
+    }
+
+    .newsletter-banner>div {
+        right: 3%;
+        padding: 15px 25px;
+    }
+
+    .newsletter-banner>div>p {
+        font-size: 15.854px;
+    }
+
+    .newsletter-banner>div>h3 {
+        font-size: 21.138px;
     }
 }
 
