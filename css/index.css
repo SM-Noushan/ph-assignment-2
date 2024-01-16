@@ -310,6 +310,63 @@ body {
     left: calc(50% - 72px);
 }
 
+/* extra section: discover-nature-experience section styles */
+.discover-nature-experience {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.discover-nature-experience .discover-nature-experience-gallery {
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    /* max-width: 50%; */
+}
+
+.discover-nature-experience-gallery .gallery img {
+    border-radius: 9.738px 9.738px 0px 0px;
+    width: 250px;
+    height: 180px;
+    vertical-align: middle;
+}
+
+.discover-nature-experience-gallery .gallery .gallery-texts {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.discover-nature-experience-gallery .gallery .camping {
+    text-align: start;
+    padding: 25px;
+    background-color: violet;
+    border-radius: 0 0 9.738px 9.738px;
+
+    width: 250px;
+    height: 180px;
+}
+
+.discover-nature-experience-gallery .gallery .resort {
+    text-align: start;
+    padding: 25px;
+    background-color: salmon;
+    border-radius: 0 0 9.738px 9.738px;
+
+    width: 250px;
+    height: 180px;
+}
+
+.discover-nature-experience-gallery .gallery .beach {
+    text-align: start;
+    padding: 25px;
+    background-color: sienna;
+    border-radius: 0 0 9.738px 9.738px;
+
+    width: 250px;
+    height: 180px;
+}
+
 /* why-choose-us section styles*/
 .why-choose-us {
     margin-top: 100px;
@@ -627,6 +684,14 @@ footer {
         left: calc(50% - 48px);
     }
 
+    .discover-nature-experience .discover-nature-experience-gallery {
+        margin-top: 16px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .discover-nature-experience,
     .why-choose-us {
         margin-top: 24px;
     }
