@@ -3,8 +3,8 @@ Main Marks
 -Popular Tours /ok
 -Choose your destination /ok
 -Why choose us /ok
--Newsletter
--footer
+-Newsletter /ok
+-footer /ok
 
 Bonus Marks
 -Choose your destination: text in image /ok
