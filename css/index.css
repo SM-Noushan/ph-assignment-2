@@ -420,6 +420,96 @@ body {
     background: rgba(233, 68, 68, 0.05);
 }
 
+/* deal & discounts section styles */
+.deals-discounts {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.deals-discounts .deals-discounts-text p {
+    margin: 24px 0 48px;
+}
+
+.deals-discounts .deals-discounts-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.deals-discounts .deals-discounts-gallery .deal-1,
+.deals-discounts .deals-discounts-gallery .deal-2,
+.deals-discounts .deals-discounts-gallery .deal-3 {
+    background-image: url('../Images/Group\ 39.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    padding: 55px;
+    display: flex;
+    justify-content: end;
+}
+
+.deals-discounts .deals-discounts-gallery .deal-2 {
+    background-image: url('../Images/image.png');
+}
+
+.deals-discounts .deals-discounts-gallery .deal-2 {
+    justify-content: start;
+}
+
+.deal-1 .deal-1-details,
+.deal-2 .deal-2-details,
+.deal-3 .deal-3-details {
+    text-align: start;
+    max-width: 579px;
+    padding: 50px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+}
+
+
+.deal-1 .deal-1-details .tour-schedule,
+.deal-2 .deal-2-details .tour-schedule,
+.deal-3 .deal-3-details .tour-schedule {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tour-schedule-div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tour-schedule-div>p {
+    margin-right: 16px;
+}
+
+.deal-1 .deal-1-details>h2,
+.deal-2 .deal-2-details>h2,
+.deal-3 .deal-3-details>h2 {
+    margin: 26px 0 16px;
+    font-size: 24px;
+}
+
+.deal-1-details .price,
+.deal-2-details .price,
+.deal-3-details .price {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 24px 0 16px;
+}
+
+.deal-1-details .btn-book-now,
+.deal-2-details .btn-book-now,
+.deal-3-details .btn-book-now {
+    width: 35%;
+}
+
 /* newsletter section styles */
 .newsletter {
     margin-top: 100px;
@@ -692,7 +782,8 @@ footer {
     }
 
     .discover-nature-experience,
-    .why-choose-us {
+    .why-choose-us,
+    .deals-discounts {
         margin-top: 24px;
     }
 
@@ -707,6 +798,53 @@ footer {
 
     .why-choose-us-cards .cards {
         width: 100%;
+    }
+
+    .deals-discounts .deals-discounts-text p {
+        margin: 16px 0;
+    }
+
+    .deals-discounts .deals-discounts-gallery {
+        gap: 16px;
+    }
+
+    .deals-discounts .deals-discounts-gallery .deal-1,
+    .deals-discounts .deals-discounts-gallery .deal-2,
+    .deals-discounts .deals-discounts-gallery .deal-3 {
+        padding: 187px 16px 16px;
+    }
+
+    .tour-schedule .p-one {
+        /* min-width: min-content; */
+        margin-right: 36.5px;
+    }
+
+    .deal-1 .deal-1-details,
+    .deal-2 .deal-2-details,
+    .deal-3 .deal-3-details {
+        padding: 24px;
+    }
+
+    .deal-1 .deal-1-details>h2,
+    .deal-2 .deal-2-details>h2,
+    .deal-3 .deal-3-details>h2 {
+        margin-top: 18px;
+        font-size: 20px;
+    }
+
+    .deal-1-details .price,
+    .deal-2-details .price,
+    .deal-3-details .price {
+        font-size: 16px;
+        font-weight: 800;
+        margin: 12px 0 16px;
+    }
+
+    .deal-1-details .btn-book-now,
+    .deal-2-details .btn-book-now,
+    .deal-3-details .btn-book-now {
+        font-size: 18px;
+        font-weight: 700;
     }
 
     .newsletter {
