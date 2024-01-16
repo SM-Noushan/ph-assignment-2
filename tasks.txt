@@ -8,9 +8,9 @@ Main Marks
 
 Bonus Marks
 -Choose your destination: text in image /ok
--Website name (different)
+-Website name (different) /ok
 -navbar /ok
--Extra section
+-Extra section /ok
 
 Optional
 -deals & discounts
