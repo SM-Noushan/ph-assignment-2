@@ -1,0 +1,17 @@
+Main Marks
+-Banner
+-Popular Tours
+-Choose your destination
+-Why choose us
+-Newsletter
+-footer
+
+Bonus Marks
+-Choose your destination: text in image
+-Website name (different)
+-navbar
+-Extra section
+
+Optional
+-deals & discounts
+-places
