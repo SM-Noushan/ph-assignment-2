@@ -1,15 +1,15 @@
 Main Marks
--Banner
--Popular Tours
--Choose your destination
--Why choose us
+-Banner /ok
+-Popular Tours /ok
+-Choose your destination /ok
+-Why choose us /ok
 -Newsletter
 -footer
 
 Bonus Marks
--Choose your destination: text in image
+-Choose your destination: text in image /ok
 -Website name (different)
--navbar
+-navbar /ok
 -Extra section
 
 Optional
