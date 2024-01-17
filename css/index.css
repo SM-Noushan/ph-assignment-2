@@ -60,9 +60,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-.navbar .nav-logo-main .nav-logo {
+.navbar .nav-logo {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -72,17 +73,23 @@ body {
     font-size: 36px;
 }
 
-.navbar .nav-items>ul {
+.navbar .nav-items {
     display: flex;
+    align-items: center;
     gap: 44px;
 }
 
-.navbar .nav-items>ul>li {
+.navbar .nav-items>li {
     list-style: none;
+    cursor: pointer;
 }
 
-.navbar .nav-items>ul>li>a {
+.navbar .nav-items>li>a {
     text-decoration: none;
+}
+
+.navbar .nav-items .color-theme {
+    font-size: 18px;
 }
 
 .navbar .nav-items .nav-items-name {
@@ -90,7 +97,23 @@ body {
     font-size: 18px;
 }
 
-.navbar .bars-icon {
+.nav-items .close-menu,
+.navbar .open-menu {
+    position: absolute;
+    color: #5A5A5D;
+    cursor: pointer;
+    font-size: 18px;
+    right: 0px;
+    display: none;
+}
+
+.nav-items .close-menu {
+    color: #FFF;
+    top: 20px;
+    right: 20px;
+}
+
+.navbar #menu-check {
     display: none;
 }
 
@@ -383,8 +406,6 @@ body {
     flex-basis: 573px;
     gap: 24px;
     justify-content: center;
-    /* align-items: center; */
-    /* margin: 0 auto; */
 }
 
 .why-choose-us-cards .cards {
@@ -555,7 +576,6 @@ body {
     display: block;
     width: 100%;
     height: 100%;
-    /* aspect-ratio: 3/2; */
     border-radius: 16px;
 }
 
@@ -672,7 +692,6 @@ footer {
 }
 
 .footer .footer-social-links a * {
-    /* text-decoration: none; */
     color: black;
 }
 
@@ -709,27 +728,11 @@ footer {
         width: 90%;
     }
 
-    .navbar .bars-icon {
-        display: block;
-    }
-
     .header-main .navbar {
         justify-content: space-between;
-        /* flex-direction: column; */
-        /* gap: 50px; */
-        /* text-align: center; */
     }
 
-    .navbar .nav-logo-main {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        /* gap: 150px; */
-    }
-
-    .navbar .nav-logo-main .nav-logo {
+    .navbar .nav-logo {
         gap: 10px;
     }
 
@@ -738,12 +741,30 @@ footer {
     }
 
     .navbar .nav-items {
-        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 7;
+        background-color: #424247;
+        transition: all 0.5s ease-in-out;
     }
 
-    .navbar .nav-items>ul {
-        flex-direction: column;
-        gap: 30px;
+    .navbar .nav-items .nav-items-name {
+        color: #FFF;
+    }
+
+    .nav-items .close-menu,
+    .navbar .open-menu {
+        display: block;
+    }
+
+    .navbar #menu-check:checked~.nav-items {
+        right: 0;
     }
 
     .header-main .banner {
@@ -784,7 +805,6 @@ footer {
     .popular-tours {
         margin-top: 24px;
         flex-direction: column;
-        /* margin: 24px 24px; */
         gap: 24px;
     }
 
@@ -1001,10 +1021,6 @@ footer {
 }
 
 @media screen and (min-width:601px) and (max-width:991px) {
-    .deals-discounts .btn-see-all {
-        display: none;
-    }
-
     .text-title {
         font-size: 30px;
     }
@@ -1019,28 +1035,12 @@ footer {
         width: 85%;
     }
 
-    .navbar .bars-icon {
-        display: block;
-    }
-
     .header-main .navbar {
         justify-content: space-between;
-        /* flex-direction: column; */
-        /* gap: 50px; */
-        /* text-align: center; */
     }
 
-    .navbar .nav-logo-main {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        /* gap: 150px; */
-    }
-
-    .navbar .nav-logo-main .nav-logo {
-        gap: 10px;
+    .navbar .nav-logo {
+        gap: 15px;
     }
 
     .nav-logo>h2 {
@@ -1048,12 +1048,30 @@ footer {
     }
 
     .navbar .nav-items {
-        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 7;
+        background-color: #424247;
+        transition: all 0.5s ease-in-out;
     }
 
-    .navbar .nav-items>ul {
-        flex-direction: column;
-        gap: 30px;
+    .navbar .nav-items .nav-items-name {
+        color: #FFF;
+    }
+
+    .nav-items .close-menu,
+    .navbar .open-menu {
+        display: block;
+    }
+
+    .navbar #menu-check:checked~.nav-items {
+        right: 0;
     }
 
     .header-main .banner {
@@ -1094,12 +1112,20 @@ footer {
     .popular-tours {
         margin-top: 24px;
         flex-direction: column;
-        /* margin: 24px 24px; */
         gap: 24px;
+    }
+
+    .popular-tours .popular-tours-text {
+        max-width: 840px;
+        width: 100%;
     }
 
     .popular-tours .popular-tours-text>p {
         margin: 16px 0;
+    }
+
+    .popular-tours .popular-tours-text>ul {
+        max-width: 840px;
     }
 
     .popular-tours .popular-tours-text>ul>li {
@@ -1143,7 +1169,6 @@ footer {
 
     .discover-nature-experience .discover-nature-experience-gallery {
         margin-top: 16px;
-        /* flex-direction: column; */
         flex-wrap: wrap;
         align-items: center;
         gap: 10px;
